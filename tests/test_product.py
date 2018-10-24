@@ -35,8 +35,4 @@ class ProductTestCase(TestCase):
             ]
         )
     
-    def test_product_name_can_not_be_empty(self):
-        "Test product name is a valid name"
-        product = Product("", 3000)
-        self.assertRaises(NameError, product.product_name, "")
 
